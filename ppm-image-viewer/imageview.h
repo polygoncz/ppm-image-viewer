@@ -1,6 +1,6 @@
 #pragma once
 
-#include <QtWidgets/QGraphicsView>
+#include <QGraphicsView>
 #include <QGraphicsItem>
 
 class ImageView : public QGraphicsView
