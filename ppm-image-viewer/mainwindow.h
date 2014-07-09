@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QLabel>
 
 namespace Ui 
 {
@@ -19,11 +20,13 @@ public:
 private slots:
     void onLoad();
     void onReload();
+    void onZoomed(double factor);
 
 private:
     Ui::MainWindow *ui;
 
     QString filename;
+    QLabel* statusBarZoomLabel;
 };
 
 #endif // MAINWINDOW_H
