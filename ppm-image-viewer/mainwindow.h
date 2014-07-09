@@ -16,8 +16,14 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+private slots:
+    void onLoad();
+    void onReload();
+
 private:
     Ui::MainWindow *ui;
+
+    QString filename;
 };
 
 #endif // MAINWINDOW_H
