@@ -8,9 +8,6 @@ const double ImageView::stepScaleFactor = 1.15;
 ImageView::ImageView(QWidget *parent)
     : QGraphicsView(parent)
 {
-    //Render
-    setRenderHints(QPainter::Antialiasing | QPainter::SmoothPixmapTransform);
-
     //Scene setup
     scene.addItem(&item);
     scene.setBackgroundBrush(QBrush(Qt::gray));
