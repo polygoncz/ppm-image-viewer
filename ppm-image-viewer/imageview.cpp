@@ -17,6 +17,9 @@ ImageView::ImageView(QWidget *parent)
     setScene(&scene);
 
     currentScaleFactor = 1.0;
+
+    //panning
+    setDragMode(ScrollHandDrag);
 }
 
 
