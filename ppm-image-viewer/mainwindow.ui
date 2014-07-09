@@ -31,11 +31,7 @@
      <number>1</number>
     </property>
     <item row="0" column="0">
-     <widget class="QPushButton" name="pushButton">
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
+     <widget class="ImageView" name="imageView"/>
     </item>
    </layout>
   </widget>
@@ -101,6 +97,13 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ImageView</class>
+   <extends>QGraphicsView</extends>
+   <header>imageview.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
