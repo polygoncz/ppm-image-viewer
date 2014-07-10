@@ -36,14 +36,13 @@ void MainWindow::onLoad()
 
     if (file.isEmpty()) return;
 
-    if (!QFile::exists(file))
-    {
+    if (!QFile::exists(file)) {
         QMessageBox::critical(this, "Error on loading", "File not found!");
         return;
     }
 
     filename = file;
-    
+
     QPixmap pixmap(filename);
     ui->imageView->setPixmap(pixmap);
 
@@ -57,12 +56,11 @@ void MainWindow::onReload()
 {
     if (filename.isEmpty()) return;
 
-    if (!QFile::exists(filename))
-    {
+    if (!QFile::exists(filename)) {
         QMessageBox::critical(this, "Error on loading", "File not found!");
         return;
     }
-    
+
     QPixmap pixmap(filename);
     ui->imageView->setPixmap(pixmap);
 }

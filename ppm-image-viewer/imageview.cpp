@@ -19,7 +19,6 @@ ImageView::ImageView(QWidget *parent)
     setDragMode(ScrollHandDrag);
 }
 
-
 ImageView::~ImageView(void)
 {}
 
@@ -36,6 +35,8 @@ void ImageView::wheelEvent(QWheelEvent* ev)
         zoomIn();
     else
         zoomOut();
+
+    ev->accept();
 }
 
 void ImageView::zoomIn()
